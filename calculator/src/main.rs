@@ -36,7 +36,7 @@ fn main() {
             "-" => println!("\nThe result is: {}\n", minus((x, y))),
             "*" => println!("\nThe result is: {}\n", multiply((x, y))),
             "/" => println!("\nThe result is: {}\n", divide((x, y))),
-            v => println!("{}", v.eq("+")),
+            _ => break,
         }
     }
 }
