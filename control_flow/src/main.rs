@@ -3,6 +3,8 @@ fn main() {
     cf_if_else();
     cf_with_let();
     cf_loop_with_return_value();
+    cf_while_loop();
+    cf_for_loop();
 }
 
 fn cf_if() {
@@ -51,4 +53,22 @@ fn cf_loop_with_return_value() -> u32 {
     };
 
     result
+}
+
+fn cf_while_loop() {
+    let mut a = 1;
+
+    while a < 10 {
+        a += 1;
+    }
+
+    println!("{}", a);
+}
+
+fn cf_for_loop() {
+    let a = [20, 30, 40, 50];
+
+    for value in a {
+        println!("{}", value)
+    }
 }
